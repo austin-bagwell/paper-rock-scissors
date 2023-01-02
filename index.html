@@ -8,27 +8,48 @@
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <h1>Woohoo, time to play rock, paper, scissors!</h1>
-    <p>Click one of the buttons to make your choice... choose wisely!</p>
-    <div class="choice-button-wrapper">
-      <button class="btn player-choice" id="rock" value="rock">Rock</button>
-      <button class="btn player-choice" id="paper" value="paper">Paper</button>
-      <button class="btn player-choice" id="scissors" value="scissors">
-        Scissors
-      </button>
-    </div>
-    <div class="round-message-wrapper">
-      <h3 class="round-message"></h3>
-    </div>
-    <div class="scoreboard-wrapper">
-      <div class="score-wrapper">
-        <p>Computer Score:</p>
-        <span id="computer-score">0</span>
+    <header class="header flex-center">
+      <h1>Rock, Paper, Scissors!</h1>
+    </header>
+    <section class="game-intro flex-center">
+      <div class="game-intro-wrapper">
+        <h2>Human vs Computer: First to 5 points wins</h2>
+        <p>Click the buttons to make your choice ... choose wisely!</p>
       </div>
-      <div class="score-wrapper">
-        <p>Player Score:</p>
-        <span id="player-score">0</span>
+    </section>
+    <section class="round-results flex-center">
+      <div class="round-message-wrapper">
+        <h3 class="round-message">good luck, have fun</h3>
       </div>
+    </section>
+    <section class="scoreboard flex-center">
+      <div class="scoreboard-wrapper flex-center">
+        <div class="score-wrapper">
+          <p>Computer Score:</p>
+          <p id="computer-score">0</p>
+        </div>
+        <div class="score-wrapper">
+          <p>Player Score:</p>
+          <p id="player-score">0</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="player-choice flex-center">
+      <div class="choice-button-wrapper">
+        <button class="btn player-choice" id="rock" value="rock">Rock</button>
+        <button class="btn player-choice" id="paper" value="paper">
+          Paper
+        </button>
+        <button class="btn player-choice" id="scissors" value="scissors">
+          Scissors
+        </button>
+      </div>
+    </section>
+
+    <div class="modal game-over flex-center hidden">
+      <p>Would you like to play again?</p>
+      <button class="btn restart-game">Play Again?</button>
     </div>
     <script src="script.js"></script>
   </body>

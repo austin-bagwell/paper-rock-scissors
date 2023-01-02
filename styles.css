@@ -1,7 +1,79 @@
-.scoreboard-wrapper {
+/* GLOBALS */
+
+body {
+  line-height: 1.5;
+  display: block;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+}
+
+.flex-center {
   display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  min-height: 85px;
+}
+
+/* ELEMENTS */
+.header {
+  background-color: black;
+  color: white;
+  font-size: xx-large;
+}
+
+.game-intro-wrapper {
+  text-align: center;
+  color: white;
+}
+
+.round-results {
+  color: white;
+  align-items: center;
+}
+
+.scoreboard-wrapper {
+  gap: 2rem;
+  align-items: center;
+  color: white;
 }
 
 .score-wrapper {
-  margin-right: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.score-wrapper p {
+  font-size: large;
+}
+
+.player-choice {
+  background-color: black;
+}
+
+.choice-button-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 35px;
+}
+
+.btn {
+  min-width: 95px;
+  min-height: 95px;
+  background-color: white;
+  border: 2px solid rgba(155, 155, 155, 0.5);
+  border-radius: 4px;
+  font-size: larger;
+}
+
+.btn:active {
+  background-color: yellow;
 }

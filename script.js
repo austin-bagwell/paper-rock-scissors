@@ -1,13 +1,17 @@
 "use strict";
+// UI
+const computerScoreEl = document.querySelector("#computer-score");
+const playerScoreEl = document.querySelector("#player-score");
+const roundMessage = document.querySelector(".round-message");
+
+const choices = document.querySelector(".choice-button-wrapper");
+choices.addEventListener("click", handleClick);
+
+// TODO should I wrap all this in a game class for practice with OOP?
 // FUNCTIONS
 let playerScore = 0;
 let computerScore = 0;
 let roundWinner = "";
-
-function playGame() {
-  // this will be outer loop that runs the game until given victory condition is met
-  // while (!isGameOver) {}
-}
 
 function gameOver() {
   return playerScore >= 5 || computerScore >= 5;
@@ -60,11 +64,3 @@ function handleClick(e) {
     restartGame();
   } else roundMessage.innerText = `${roundWinner} won this round!`;
 }
-
-// UI
-const computerScoreEl = document.querySelector("#computer-score");
-const playerScoreEl = document.querySelector("#player-score");
-const roundMessage = document.querySelector(".round-message");
-
-const choices = document.querySelector(".choice-button-wrapper");
-choices.addEventListener("click", handleClick);
