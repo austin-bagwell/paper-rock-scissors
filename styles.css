@@ -1,0 +1,7 @@
+.scoreboard-wrapper {
+  display: flex;
+}
+
+.score-wrapper {
+  margin-right: 1rem;
+}
